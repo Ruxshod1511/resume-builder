@@ -10,31 +10,19 @@ import {
   ComputerDesktopIcon,
   DevicePhoneMobileIcon,
 } from "@heroicons/react/24/outline";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  AnimatePresence,
-} from "framer-motion";
-import {
-  FaRegFileAlt,
-  FaRobot,
-  FaGlobe,
-  FaPalette,
-  FaDownload,
-} from "react-icons/fa";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { FaRegFileAlt, FaRobot, FaPalette, FaDownload } from "react-icons/fa";
 import {
   MdDashboardCustomize,
   MdOutlineDesignServices,
   MdOutlineTranslate,
   MdShare,
 } from "react-icons/md";
-import { TbCloudDownload, TbStars } from "react-icons/tb";
+import { TbStars } from "react-icons/tb";
 import { FiClock } from "react-icons/fi";
 import { RiShieldCheckLine } from "react-icons/ri";
 export default function Home() {
   const { userId } = useAuth();
-  const [isHovering, setIsHovering] = useState(false);
   const [currentTemplate, setCurrentTemplate] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 

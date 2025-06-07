@@ -10,7 +10,6 @@ import {
   FaShare,
   FaSave,
 } from "react-icons/fa";
-import { FiClock, FiDownload } from "react-icons/fi";
 import { Drawer } from "vaul";
 import { toast, Toaster } from "react-hot-toast";
 import { db } from "../utils/Firebase.config";
