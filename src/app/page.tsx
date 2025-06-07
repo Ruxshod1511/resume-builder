@@ -10,7 +10,7 @@ import {
   ComputerDesktopIcon,
   DevicePhoneMobileIcon,
 } from "@heroicons/react/24/outline";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaRegFileAlt, FaRobot, FaPalette, FaDownload } from "react-icons/fa";
 import {
   MdDashboardCustomize,
@@ -25,8 +25,6 @@ export default function Home() {
   const { userId } = useAuth();
   const [currentTemplate, setCurrentTemplate] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-
-  const { scrollYProgress } = useScroll();
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1500);
