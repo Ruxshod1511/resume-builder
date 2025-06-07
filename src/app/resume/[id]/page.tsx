@@ -559,7 +559,8 @@ const Page = () => {
         backgroundColor: "#FFFFFF",
         scrollX: 0,
         scrollY: 0,
-        windowWidth: 794, // A4 eni (px)
+        windowWidth: 794, 
+        windowHeight: 1123,
       },
       jsPDF: {
         unit: "mm",
