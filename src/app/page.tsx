@@ -27,7 +27,6 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1500);
